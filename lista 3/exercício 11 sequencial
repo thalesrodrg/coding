@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num1;
+
+        System.out.print("Digite um número: ");
+        num1 = sc.nextInt();
+
+        System.out.println("Antecessor: " + (num1 - 1));
+        System.out.println("Sucessor: " + (num1 + 1));
+        System.out.println("Dobro: " + (num1 * 2));
+        System.out.println("Metade: " + (num1 / 2.0));
+
+        
+    }
+}
