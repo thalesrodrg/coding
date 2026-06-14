@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double x, y, z;
+
+        System.out.print("Lado X: ");
+        x = sc.nextDouble();
+
+        System.out.print("Lado Y: ");
+        y = sc.nextDouble();
+
+        System.out.print("Lado Z: ");
+        z = sc.nextDouble();
+
+        if (x < y + z && y < x + z && z < x + y) {
+            System.out.println("Forma um triângulo.");
+        } else {
+            System.out.println("Não forma um triângulo.");
+        }
+
+        
+    }
+}
