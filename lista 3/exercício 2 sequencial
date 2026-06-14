@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int nascimento, atual;
+        int max =2050;
+
+        System.out.print("Ano de nascimento: ");
+        nascimento = sc.nextInt();
+
+        System.out.print("Ano atual: ");
+        atual = sc.nextInt();
+
+        System.out.println("Idade atual: " + (atual - nascimento));
+        System.out.println("Idade em 2050: " + (max - nascimento));
+
+       
+    }
+}
