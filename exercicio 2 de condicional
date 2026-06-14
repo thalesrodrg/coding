@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1, num2, media;
+
+        System.out.print("Nota 1: ");
+        num1 = sc.nextDouble();
+
+        System.out.print("Nota 2: ");
+        num2 = sc.nextDouble();
+
+        media = (num1 + num2) / 2;
+
+        System.out.println("Média: " + media);
+
+        if (media >= 7) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+
+    }
+}
