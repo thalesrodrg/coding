@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int idade;
+        double peso;
+        int acima90 = 0;
+        int somaIdades = 0;
+
+        for (int i = 1; i <= 7; i++) {
+
+            System.out.print("Idade: ");
+            idade = sc.nextInt();
+
+            System.out.print("Peso: ");
+            peso = sc.nextDouble();
+
+            somaIdades += idade;
+
+            if (peso > 90) {
+                acima90++;
+            }
+        }
+
+        System.out.println("Pessoas acima de 90 kg: " + acima90);
+        System.out.println("Média das idades: " + ((double) somaIdades / 7));
+
+   
+    }
+}
