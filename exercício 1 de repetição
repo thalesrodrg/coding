@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int matricula;
+        double num1, num2, num3, media;
+
+        while (true) {
+            System.out.print("Digite a matrícula: ");
+            matricula = sc.nextInt();
+
+            if (matricula < 0) {
+                break;
+            }
+
+            System.out.print("Nota 1: ");
+            num1 = sc.nextDouble();
+
+            System.out.print("Nota 2: ");
+            num2 = sc.nextDouble();
+
+            System.out.print("Nota 3: ");
+            num3 = sc.nextDouble();
+
+            media = (num1 + num2 + num3) / 3;
+
+            if (media >= 70) {
+                System.out.println("Aprovado");
+            } else if (media >= 60) {
+                System.out.println("Exame");
+            } else {
+                System.out.println("Reprovado");
+            }
+        }
+
+    }
+}
