@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double num1;
+
+        System.out.print("Digite um número positivo: ");
+        num1 = sc.nextDouble();
+
+        System.out.println("Quadrado: " + Math.pow(num1, 2));
+        System.out.println("Cubo: " + Math.pow(num1, 3));
+        System.out.println("Raiz quadrada: " + Math.sqrt(num1));
+        System.out.println("Raiz cúbica: " + Math.cbrt(num1));
+
+      
+    }
+}
