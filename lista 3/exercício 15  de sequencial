@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int eleitores, votos1, votos2, nulos;
+        double perc1, perc2, percNulos;
+
+        System.out.print("Total de eleitores: ");
+        eleitores = sc.nextInt();
+
+        System.out.print("Votos do candidato 1: ");
+        votos1 = sc.nextInt();
+
+        System.out.print("Votos do candidato 2: ");
+        votos2 = sc.nextInt();
+
+        nulos = eleitores - votos1 - votos2;
+
+        perc1 = (votos1 * 100.0) / eleitores;
+        perc2 = (votos2 * 100.0) / eleitores;
+        percNulos = (nulos * 100.0) / eleitores;
+
+        System.out.println("Candidato 1: " + perc1 + "%");
+        System.out.println("Candidato 2: " + perc2 + "%");
+        System.out.println("Nulos: " + percNulos + "%");
+
+
+    }
+}
